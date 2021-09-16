@@ -2,5 +2,5 @@
 
     interface Caged
     {
-        public function livesInCage(): void;
+        public function livesInCage(): string;
     }

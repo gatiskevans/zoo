@@ -1,10 +1,17 @@
 <?php
 
-    class Friendly implements Outdoors
+    class Friendly implements Outdoors, Animal
     {
 
-        public function livesOutdoors(): void
+        private string $name;
+
+        public function __construct(string $name)
         {
-            // TODO: Implement livesOutdoors() method.
+            $this->name = $name;
+        }
+
+        public function livesOutdoors(): string
+        {
+            return "$this->name lives outdoors\n";
         }
     }

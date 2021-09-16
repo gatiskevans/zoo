@@ -2,5 +2,5 @@
 
     interface Outdoors
     {
-        public function livesOutdoors(): void;
+        public function livesOutdoors(): string;
     }

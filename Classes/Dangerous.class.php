@@ -1,9 +1,17 @@
 <?php
 
-    class Dangerous implements Caged
+    class Dangerous implements Caged, Animal
     {
-        public function livesInCage(): void
+
+        private string $name;
+
+        public function __construct(string $name)
         {
-            // TODO: Implement livesInCage() method.
+            $this->name = $name;
+        }
+
+        public function livesInCage(): string
+        {
+            return "$this->name lives in a cage\n";
         }
     }

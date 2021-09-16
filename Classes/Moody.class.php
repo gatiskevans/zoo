@@ -1,15 +1,22 @@
 <?php
 
-    class Moody implements Caged, Outdoors
+    class Moody implements Caged, Outdoors, Animal
     {
 
-        public function livesInCage(): void
+        private string $name;
+
+        public function __construct(string $name)
         {
-            // TODO: Implement livesInCage() method.
+            $this->name = $name;
         }
 
-        public function livesOutdoors(): void
+        public function livesInCage(): string
         {
-            // TODO: Implement livesOutdoors() method.
+            return "$this->name sometimes lives in a cage\n";
+        }
+
+        public function livesOutdoors(): string
+        {
+            return "$this->name sometimes lives outdoors\n";
         }
     }
