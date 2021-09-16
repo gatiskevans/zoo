@@ -2,7 +2,6 @@
 
     class Moody implements Caged, Outdoors, Animal
     {
-
         private string $name;
 
         public function __construct(string $name)

@@ -2,7 +2,6 @@
 
     class Dangerous implements Caged, Animal
     {
-
         private string $name;
 
         public function __construct(string $name)

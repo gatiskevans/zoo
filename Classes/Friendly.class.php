@@ -2,7 +2,6 @@
 
     class Friendly implements Outdoors, Animal
     {
-
         private string $name;
 
         public function __construct(string $name)
